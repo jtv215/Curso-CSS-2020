@@ -1,0 +1,35 @@
+*{
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    font-size: 20px;
+}
+ul li:first-child{
+    color: blueviolet;
+
+}
+ul li:nth-child(2){
+    color: yellow;
+}
+#enlace{
+    font-size: 30px;
+    
+}
+
+#enlace:link{
+    color: grey;
+}
+
+#enlace:visited{
+    color: red;
+}
+
+#enlace:hover{
+    color: blue;
+}
+
+#enlace:active{
+    color: green;
+}

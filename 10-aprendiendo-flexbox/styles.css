@@ -1,0 +1,100 @@
+body{
+    --rojo:red; /*usar variables*/
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#layout{
+    border: 3px solid black;
+    padding: 5px;
+
+  /*  height: 700px;*/
+    display: flex;
+    flex-flow: row wrap;
+    /*--RESPONSIVE--*/
+    /*
+    display:flex-> ocupa el maximo 100% el elemento se ponde al lado del otro ocupando el 100% de la pantalla (NO ES RESPONSIVE).
+    dispaly:inline-flex -> las cajitas se adaptan al  layout(a la caja grade) y se pone un elemento alado del otro (NO ES RESPONSIVE).
+    flex-direction: -> row, colum, row-reverse, column-reverse, unset
+    /*flex-wrap: wrap; nowrap los elementos se añaden uno bajo del otro, (ES RESPONSIVE)
+    /*flex-flow: row wrap; && display:flex o inline-flex ; y en la cajitas cuando se hace responsive 
+    la anchura se queda raro (usar dentro de las cajitas flex-grow:1;)AHORRA UNA LINEA en lugar de flex-direction: row ;(ES RESPONSIVE)*/
+ 
+     /* alinear horizontalmente*/
+    /*  justify-content: flex-start; elemento alinieado por defecto a la izquierda
+        justify-content: flex-end; se coloca a la derecha
+        justify-content: center; se coloca al centro y te evitas el margin 0 auto, el align text center;
+        justify-content: left;
+        justify-content: right;
+        justify-content: space-around; distribuye las cajitas dejanto un espacio deajndo espacios;
+        justify-content: space-between; lo mismo que arriba pero quita el espacio al primer elemento y final;
+    */
+
+    /* alinear verticalmente*/
+   /*   align-items: baseline; se adapta la altura al tamaño de las cajtias
+        align-items: center;
+        align-items: flex-end;   las cajitas se van al bajo del todo
+        align-items: flex-start; las cajitas se ponen al principio
+    */
+
+
+}
+
+.caja{
+    flex-grow: 1;
+    /*flex-grow: 1;  (simpre 1) se adapta al mismo tamaño todas las cajas, para compartir tamaños*/
+    /*si quitas flex grow,o lo pones a cero no se adaptan muy bien las cajas se ven con distintos tamaños
+    cuando se va reducciondo*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin: 10px;
+    background: gray;
+    
+     /*solo con width 25% las cajitas no se adapta en su totalidad dejando un espacio grande a la derecha*
+     por eso es mejor usar flex-basis 100% / columnas y (restas los margenes ir probando*/
+
+   /* flex-basis: calc((100%/3) - 68px);*/
+
+
+
+}
+
+.red{
+  
+    /* la primera caja tenga ocupe mas espacio
+    flex-basis: 75%;
+    */
+    /* flex-grow: 5;cuando se pone flex-grow a una caja especifica y se pone por ejemplo a 5,
+    La caja roja cogera mas espacio*/  
+    background: var(--rojo);
+
+
+
+}
+
+.green{
+     /* alinear verticalmente estando en la cajita*/ 
+    /* align-self: center;*/
+    background: green;
+
+}
+.blue{
+   /* margin-top:  10%;*/
+
+     /*flex-shrink: 0;reduce el tamaño de la caja  */
+    background: blue;
+
+}
+.orange{
+    /*   flex-grow: 10;   En la caja se tiene que tener display: flex; para que se adapten las cajitas a la caja */
+    background: orange;
+    /*flex-basis: 100%; nos permite dar un tamaño minimo*/
+
+  /*  align-self: flex-end;*/
+
+}

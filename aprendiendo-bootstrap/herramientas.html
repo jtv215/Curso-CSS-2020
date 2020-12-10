@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Descargar bootstrap en mi proyecto-->
+<!--
+    1. https://getbootstrap.com/docs/4.4/getting-started/download/
+    a) Compiled CSS and JS descargar, descomprimir a tu proyecto
+
+    2. Bootstrap depedende de jquery, asi que descargar.
+    a)https://jquery.com/download/
+    b)buscar la version comprimida para producción ->Download the compressed, production jQuery 3.4.1
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  -->
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Para que se vea bien el response en todos los navegadores
+    viewport es para que sea adaptable en dispositivo-->
+  <meta name="viewport" content="width=device-width,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <title>Aprendiendo Bootstrap</title>
+</head>
+
+
+
+<body>
+  <h1>Herramientas disponibles en Bootstrap 4.0</h1>
+  <hr>
+
+  <div class="container" style="height: 500px;">
+    <div class="float-left m-2 p-3 float-sm-none float-md-left caja w-25 h-25 border border-success rounded
+    bg-primary text-secondary">
+      caja
+    </div>
+    <div class="float-left m-2 p-3 caja w-25 h-25 border border-primary rounded bg-danger text-primary">
+      caja
+    </div>
+    <div class=" float-left m-2 p-3 caja w-25 h-25  border border-dark rounded bg-warning">
+      caja
+    </div>
+    <div class="clearfix"></div>
+    <div class=" mx-auto m-2  w-25 h-25 p-3  border border-dark rounded bg-success shadow">
+      caja
+    </div>
+  
+    <div class="clearfix"></div>
+    <hr>
+    <h2>Esto es fin del contenedor</h2>
+
+    <p class="display-4 font-weight-bold text-center ">Esto es un texto</p>
+
+  </div>
+   
+
+
+
+</body>
+
+<!--para que bootstrap funcione bien hay que cargar el script de jquey y de bootstrap-->
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</html>

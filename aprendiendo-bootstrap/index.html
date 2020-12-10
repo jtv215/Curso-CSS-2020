@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Descargar bootstrap en mi proyecto-->
+<!--
+    1. https://getbootstrap.com/docs/4.4/getting-started/download/
+    a) Compiled CSS and JS descargar, descomprimir a tu proyecto
+
+    2. Bootstrap depedende de jquery, asi que descargar.
+    a)https://jquery.com/download/
+    b)buscar la version comprimida para producción ->Download the compressed, production jQuery 3.4.1
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  -->
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Para que se vea bien el response en todos los navegadores
+    viewport es para que sea adaptable en dispositivo-->
+  <meta name="viewport" content="width=device-width,user-scalable=no"/>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <title>Aprendiendo Bootstrap</title>
+</head>
+
+
+
+<body>
+
+  <div class="container-fluid border">
+    <div class="row">
+      <header id="header" class="col-12 bg-primary text-white p-2 pl-5">
+        <h1>Aprendiendo bootstrap con victor robles</h1>
+      </header>
+      <!-- Ocultar componentes en x tamaños: d-xs-none d-sm-none d-md-block
+        d: display
+        none: para ocultar
+        block para mostar
+         -->
+      <nav id="menu" class="col-12 bg-secondary text-white 
+      d-none d-sm-none d-md-block">
+
+
+        <ul class="row w-50">
+          <li class="col-xs-12 col-sm-12 col-md">Inicio</li>
+          <li class="col-xs-12 col-sm-12   col-md">Pagina1</li>
+          <li class="col-xs-12 col-sm-12  col-md">Pagina2</li>
+          <li class="col-xs-12 col-sm-12  col-md">Pagina3</li>
+          <li class="col-xs-12 col-sm-12  col-md">Contacto</li>
+        </ul>
+      </nav>
+
+      <section id="content" class="col-12">
+        <div class="row">
+          <!-- 1columa Productos-->
+          <section id="products" class="col-12 col-sm-12 col-md-9 border">
+            <h2>Productos</h2>
+            <hr>
+            <div class="items ">
+
+              <div class="row">
+                <div class="item col col-md-12 bg-primary"> producto</div>
+                <div class="item col col-md-6 bg-warning"> producto</div>
+                <div class="item col col-md-6 bg-danger"> producto</div>
+              </div>
+
+              <div class="row">
+              <div class="item col m-2 bg-primary"> producto</div>
+              <div class="item col m-2 bg-warning"> producto</div>
+              <div class="item col m-2 bg-danger"> producto</div>
+            </div>
+            <div class="row mt-5">
+              <div class="item col m-2 bg-primary"> producto</div>
+              <div class="item col m-2 bg-warning"> producto</div>
+              <div class="item col m-2 bg-danger"> producto</div>
+              <div class="item col-5 m-2 bg-success"> producto</div>
+
+            </div>
+            <!-- Alinear elementos de forma horinztal-->
+            <!-- justify-content-center ; around , betweend-->
+            <div class="row mt-1 justify-content-center">
+              <div class="item col-3 m-2 bg-primary"> producto</div>
+              <div class="item col-3 m-2 bg-warning"> producto</div>
+            
+
+            </div>
+
+            <div class="row">
+              <div class="item col-3 m-2 bg-primary"> producto</div>
+              <div class="item col-3 m-2 bg-warning"> producto</div>
+              <div class="item col-3 m-2 bg-danger"> producto</div>
+              <div class="item col-2 m-2 bg-danger offset-1"> producto</div>
+            </div>
+
+            </div>
+          </section>
+
+          <!--2 columa barra-->
+          <aside class="col-3 border  d-none d-sm-none d-md-block">
+            <h2>Barra lateral</h2>
+            <!-- Alinear elementos de forma vertical-->
+            <!-- align-items-start , end, center-->
+            <!-- individualmente  align-self-start mend, center-->
+
+            <div class="lateral row bg-light align-items-end">
+              <div class="col-12 bg-primary ">
+                elemento 1
+              </div>
+              <div class="col-12 bg-success ">
+                elemento 2
+              </div>
+              <div class="col-12 bg-warning ">
+                elemento 3
+              </div>
+         
+
+
+            </div>
+          </aside>
+      </section>
+
+      <footer class="col-lg-12 bg-info h-25">Master en css con victor roles</footer>
+
+    </div>
+  </div>
+  </div>
+  <!--
+    <div class="mi-web w-75 m-auto p-5 border">
+    <h1>Aprendiendo Bootstrap</h1>
+    <h2>Bienvenido a la clase del framework de Bootstrap</h2>
+    <button class="btn btn-success">hola </button>
+
+  </div>
+-->
+
+
+
+</body>
+
+<!--para que bootstrap funcione bien hay que cargar el script de jquey y de bootstrap-->
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</html>
